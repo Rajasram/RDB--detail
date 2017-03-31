@@ -62,9 +62,9 @@
   <!-- /* Header ends */ -->
     
     <main>
-    <div class="row ">
-        <div class="col s3 padding-0">
-          
+    <div class="row">
+        <div class="col s12 padding-0">
+        <div class="col s3 card padding-0 margin-20">
         <div class="col s12 padding-0">
             <div class="back-list">
             <a href="#">  <i class="material-icons">keyboard_backspace</i> RETOUR À LA LISTE</a>
@@ -120,8 +120,9 @@
             </div>
               
     </div>
-    <div class="col s9 cv-detail padding-0">
-        <div class="row cv-heading padding-0">
+   
+         <div class="col s8 cv-detail margin-20">
+        <div class="row cv-heading card padding-0">
        <div class="col s9">
             <div class="col s1 cv-account"><i class="material-icons">account_circle</i></div>
            <div class="col s11 cv-main-detail">
@@ -144,8 +145,13 @@ Salaire souhaite : <b>19000 euros / an.</b></p>
            </ul>
             </div>
         </div>
-        <div class="row skills-formation">
-        <div class="col s11 skills">
+        <div class="row skills-formation card">
+            <ul class="cv-links">
+            <li><i class="material-icons">email</i></li>
+                <li><i class="material-icons">file_download</i></li>
+                <li><i class="material-icons">reply_all</i></li>
+            </ul>
+        <div class="col s11 skills ">
             <blockquote>skills</blockquote>
             <ul class="skill-list">
             <li>CSS</li><li>UX</li><li>Web</li><li>Cascading stylesheet</li><li>Foundation Framework</li><li>Lynda</li><li>Primary Research</li>
@@ -163,7 +169,8 @@ Salaire souhaite : <b>19000 euros / an.</b></p>
             </div>
             
         </div>
-        <div class="row exp-edu">
+        <div class="row">
+            <div class="col s12 exp-edu card">
             <div class="col s6 exp-edu-list">
                  <blockquote>EXPÉRIENCE PROFESSIONELLE</blockquote>
                 <ul>
@@ -188,12 +195,27 @@ Salaire souhaite : <b>19000 euros / an.</b></p>
           <a class="waves-effect waves-light btn exp-btn"><i class="material-icons right">keyboard_arrow_down</i>AUTRES</a>  
     
         </div>
+            </div>
+             <div class="row">
+             <div class="col s12 card">
+                <blockquote>CV</blockquote>  
+                 <iframe class="doc" src="https://docs.google.com/gview?url=http://writing.engr.psu.edu/workbooks/formal_report_template.doc&embedded=true" width="100%" height="100%"></iframe>
+            </div>
+             </div>
     </div>
+        </div>
+        
         </div>
     </main>
 
     <script src="assets/js/bin/jquery-2.2.4.min.js"></script>
   <script src="assets/js/bin/materialize.min.js"></script>
   <script src="assets/js/bin/custom.js"></script>
+    <script>
+$('iframe').load(function() {
+    this.style.height =
+    this.contentWindow.document.body.offsetHeight + 'px';
+});
+    </script>
 </body>
 </html>
